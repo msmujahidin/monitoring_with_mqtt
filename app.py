@@ -5,7 +5,7 @@ import random, threading, json
 #setting mqttnya dulu
 mqtt_username = "mqtt"
 mqtt_password = "mqtt"
-MQTT_Broker = "mqtt.danova.id"
+MQTT_Broker = "docker.lxd"
 MQTT_Port = 1883
 #Keep_Alive_Interval = 60
 MQTT_Topic_control = "smartpju/led" 
@@ -66,5 +66,4 @@ def onoff():
 
 
 if __name__ == '__main__':
-    app.run()
-#(debug=True, host='0.0.0.0')
+    app.run(debug=True, host='0.0.0.0')
